@@ -575,3 +575,39 @@ function noniko_dmc_get_meditation_count( $language = null ) {
 	return $count;
 }
 
+
+/**
+ * Checks whether the plugin database needs to be updated.
+ *
+ * @return void
+ */
+function noniko_dmc_maybe_update_database() {
+
+	$current_db_version = NONIKO_DMC_DB_VERSION;
+
+	$installed_db_version = get_option(
+		'noniko_dmc_db_version',
+		''
+	);
+
+	/*
+	 * Database is already up to date.
+	 */
+	if ( $installed_db_version === $current_db_version ) {
+		return;
+	}
+
+	/*
+	 * Recreate and import all bundled database data.
+	 */
+	noniko_dmc_create_database();
+
+	/*
+	 * Store the new database version
+	 * only after the import has been completed.
+	 */
+	update_option(
+		'noniko_dmc_db_version',
+		$current_db_version
+	);
+}

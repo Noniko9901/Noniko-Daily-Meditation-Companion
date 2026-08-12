@@ -13,20 +13,23 @@ defined( 'ABSPATH' ) || exit;
  * @return void
  */
 function noniko_dmc_add_admin_menu() {
+	add_menu_page(
+	__(
+		'Noniko Daily Meditation',
+		'noniko-daily-meditation-companion'
+	),
+	__(
+		'Daily Meditation',
+		'noniko-daily-meditation-companion'
+	),
+	'manage_options',
+	'noniko-daily-meditation',
+	'noniko_dmc_render_admin_page',
+	'dashicons-format-status',
+	25
+);
 
-	add_options_page(
-		__(
-			'Noniko Daily Meditation',
-			'noniko-daily-meditation-companion'
-		),
-		__(
-			'Daily Meditation',
-			'noniko-daily-meditation-companion'
-		),
-		'manage_options',
-		'noniko-daily-meditation',
-		'noniko_dmc_render_admin_page'
-	);
+
 }
 
 add_action(
@@ -98,38 +101,6 @@ function noniko_dmc_render_admin_page() {
 					</tr>
 
 					<tr>
-
-					
-
-					</tr>
-
-					<tr>
-
-						<td>
-							<strong>
-								<?php
-								echo esc_html__(
-									'Table',
-									'noniko-daily-meditation-companion'
-								);
-								?>
-							</strong>
-						</td>
-
-						<td>
-							<code>
-								<?php
-			echo esc_html__(
-				'[noniko_daily_meditation_en]',
-				'noniko-daily-meditation-companion'
-			);
-			?>
-							</code>
-						</td>
-
-					</tr>
-
-				</tbody>
 
 			</table>
 
@@ -212,7 +183,7 @@ function noniko_dmc_render_admin_page() {
 			<p>
 				<code>	<?php
 			echo esc_html__(
-				'[noniko_daily_meditation_en]',
+				'[noniko_daily_meditation]',
 				'noniko-daily-meditation-companion'
 			);
 			?></code>
@@ -231,7 +202,7 @@ function noniko_dmc_render_admin_page() {
 				<code>
 					<?php
 			echo esc_html__(
-				'[noniko_daily_meditation_en date="01-03"]',
+				'[noniko_daily_meditation date="01-03"]',
 				'noniko-daily-meditation-companion'
 			);
 			?>

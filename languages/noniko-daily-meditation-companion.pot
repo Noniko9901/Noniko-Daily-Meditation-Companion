@@ -1,0 +1,112 @@
+# Copyright (C) 2026 Noniko9901
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Noniko Daily Meditation Companion 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/noniko-daily-meditation-companion\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-09T14:17:57+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: noniko-daily-meditation-companion\n"
+
+#. Plugin Name of the plugin
+#: noniko-daily-meditation-companion.php
+#: includes/admin.php:55
+msgid "Noniko Daily Meditation Companion"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: noniko-daily-meditation-companion.php
+msgid "https://github.com/noniko9901/noniko-daily-meditation-companion"
+msgstr ""
+
+#. Description of the plugin
+#: noniko-daily-meditation-companion.php
+msgid "Displays a daily meditation from a local WordPress database."
+msgstr ""
+
+#. Author of the plugin
+#: noniko-daily-meditation-companion.php
+msgid "Noniko9901"
+msgstr ""
+
+#. Author URI of the plugin
+#: noniko-daily-meditation-companion.php
+msgid "https://github.com/noniko9901"
+msgstr ""
+
+#: includes/admin.php:18
+msgid "Noniko Daily Meditation"
+msgstr ""
+
+#: includes/admin.php:22
+msgid "Daily Meditation"
+msgstr ""
+
+#: includes/admin.php:66
+msgid "Database information"
+msgstr ""
+
+#: includes/admin.php:82
+msgid "Plugin version"
+msgstr ""
+
+#: includes/admin.php:111
+msgid "Table"
+msgstr ""
+
+#: includes/admin.php:122
+#: includes/admin.php:214
+msgid "[noniko_daily_meditation_en]"
+msgstr ""
+
+#: includes/admin.php:142
+msgid "Data import"
+msgstr ""
+
+#: includes/admin.php:151
+msgid "The data source consists of language-specific SQL files located in the plugin's data directory"
+msgstr ""
+
+#: includes/admin.php:178
+msgid "Re-import database"
+msgstr ""
+
+#: includes/admin.php:196
+msgid "Shortcode"
+msgstr ""
+
+#: includes/admin.php:205
+msgid "To display today s meditation, use:"
+msgstr ""
+
+#: includes/admin.php:223
+msgid "To display a specific day:"
+msgstr ""
+
+#: includes/admin.php:233
+msgid "[noniko_daily_meditation_en date=\"01-03\"]"
+msgstr ""
+
+#: includes/admin.php:257
+msgid "You do not have sufficient permissions."
+msgstr ""
+
+#: includes/admin.php:315
+msgid "The database was imported successfully."
+msgstr ""
+
+#: includes/shortcode-en.php:71
+#: includes/shortcode-pl.php:71
+msgid "No meditation was found for this day."
+msgstr ""
+
+#: includes/shortcode-en.php:118
+#: includes/shortcode-pl.php:118
+msgid "Just for Today: "
+msgstr ""

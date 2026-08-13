@@ -4,7 +4,7 @@ Tags: meditation, daily meditation, recovery, addiction recovery, shortcode
 Requires at least: 6.9
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0.1
+Stable tag: 1.0.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,36 +12,11 @@ Daily meditation plugin designed to support people recovering from addiction. In
 
 == Description ==
 
-Noniko Daily Meditation Companion is a WordPress plugin that provides daily meditation content designed to support people affected by addiction and those in recovery.
+Noniko Daily Meditation Companion provides daily meditation content in Polish and English for people affected by addiction and those in recovery.
 
 The plugin displays a meditation for the current day or allows a specific meditation date to be selected.
 
 Meditation content is stored locally in a dedicated WordPress database table. The plugin does not require external APIs or remote services to display meditation content.
-
-The plugin currently supports:
-
-* Polish.
-* English.
-
-The plugin architecture is designed to allow additional languages to be added in future releases.
-
-Features include:
-
-* Daily meditation display.
-* Support for displaying meditation for a specific date.
-* Polish and English language support.
-* Architecture prepared for additional languages.
-* Automatic database table creation.
-* Import of meditation data from bundled SQL files.
-* Database update system.
-* Ability to update meditation data without reinstalling the plugin.
-* Database information and management tools.
-* Dedicated administration page.
-* Plugin settings available from the WordPress administration sidebar.
-* Manual database update functionality.
-* Translation-ready strings.
-* Local storage of meditation data.
-* No external API required.
 
 == Installation ==
 
@@ -99,6 +74,11 @@ The meditation database is stored locally in the WordPress installation.
 The plugin does not require an external API or remote service to display meditation content.
 
 == Changelog ==
+
+= 1.0.0.2 =
+
+* Improved meditation text formatting.
+* Added a plugin footer.
 
 = 1.0.0.1 =
 

@@ -49,6 +49,10 @@ msgid "Daily Meditation"
 msgstr ""
 
 #: includes/admin.php:66
+msgid "Information"
+msgstr ""
+
+#: includes/admin.php:66
 msgid "Database information"
 msgstr ""
 
@@ -94,6 +98,12 @@ msgstr ""
 
 #: includes/admin.php:283
 msgid "The database was imported successfully."
+msgstr ""
+
+#. translators: Plugin version.
+#: includes/footer.php:45
+#, php-format
+msgid "Version %s"
 msgstr ""
 
 #: includes/shortcode.php:66

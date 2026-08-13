@@ -146,7 +146,7 @@ function noniko_dmc_render_meditation_shortcode( $atts ) {
 
 					<?php
 					echo esc_html__(
-						'Just for Today:',
+						'Just for Today: ',
 						'noniko-daily-meditation-companion'
 					);
 					?>
@@ -171,6 +171,6 @@ function noniko_dmc_render_meditation_shortcode( $atts ) {
 	</article>
 
 	<?php
-
+    noniko_dmc_display_footer();
 	return ob_get_clean();
 }

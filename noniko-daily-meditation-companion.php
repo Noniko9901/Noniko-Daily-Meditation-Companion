@@ -3,7 +3,7 @@
  * Plugin Name: Noniko Daily Meditation Companion
  * Plugin URI: https://github.com/noniko9901/noniko-daily-meditation-companion
  * Description: Displays a daily meditation from a local WordPress database.
- * Version: 1.0.0.1
+ * Version: 1.0.0.2
  * Requires at least: 6.9
  * Requires PHP: 7.4
  * Author: Noniko9901
@@ -23,8 +23,8 @@ defined( 'ABSPATH' ) || exit;
  *
  * @var string
  */
-define( 'NONIKO_DMC_VERSION', '1.0.0.1' );
-define( 'NONIKO_DMC_DB_VERSION', '1.0.0.1' );
+define( 'NONIKO_DMC_VERSION', '1.0.0.2' );
+define( 'NONIKO_DMC_DB_VERSION', '1.0.0.2' );
 
 /**
  * Plugin main file.
@@ -47,15 +47,12 @@ define( 'NONIKO_DMC_DIR', plugin_dir_path( __FILE__ ) );
  */
 define( 'NONIKO_DMC_URL', plugin_dir_url( __FILE__ ) );
 
-/**
- * Load database functionality.
- */
+
 require_once NONIKO_DMC_DIR . 'includes/database.php';
 
-/**
- * Load shortcode functionality.
- */
 require_once NONIKO_DMC_DIR . 'includes/shortcode.php';
+
+require_once NONIKO_DMC_DIR . 'includes/footer.php';
 
 
 /**
@@ -100,6 +97,16 @@ add_action(
 	'noniko_dmc_enqueue_styles'
 );
 
+function noniko_dmc_enqueue_footer_styles() {
+
+	wp_enqueue_style(
+		'noniko-dmc-footer',
+		plugin_dir_url( __FILE__ ) . 'assets/css/footer.css',
+		array(),
+		'1.0.0.2'
+	);
+}
+add_action( 'wp_enqueue_scripts', 'noniko_dmc_enqueue_footer_styles' );
 
 function noniko_dmc_load_textdomain() {
 

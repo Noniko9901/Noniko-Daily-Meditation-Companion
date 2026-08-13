@@ -6,10 +6,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/noniko-daily-"
 "meditation-companion\n"
 "POT-Creation-Date: 2026-08-12T14:56:25+02:00\n"
-"PO-Revision-Date: 2026-08-13 08:28+0200\n"
+"PO-Revision-Date: 2026-08-13 12:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: pl_PL\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +29,7 @@ msgstr "https://github.com/noniko9901/noniko-daily-meditation-companion"
 #. Description of the plugin
 #: noniko-daily-meditation-companion.php
 msgid "Displays a daily meditation from a local WordPress database."
-msgstr "Wyświetla codzienną medytację z lokalnej bazy danych WordPressa."
+msgstr "Displays a daily meditation from a local WordPress database."
 
 #. Author of the plugin
 #: noniko-daily-meditation-companion.php
@@ -50,28 +50,32 @@ msgid "Daily Meditation"
 msgstr "Daily Meditation"
 
 #: includes/admin.php:66
+msgid "Information"
+msgstr "Information"
+
+#: includes/admin.php:66
 msgid "Database information"
-msgstr "Informacje o bazie danych"
+msgstr "Database information"
 
 #: includes/admin.php:82
 msgid "Plugin version"
-msgstr "Wersja wtyczki"
+msgstr "Plugin version"
 
 #: includes/admin.php:110
 msgid "Data import"
-msgstr "Import danych"
+msgstr "Data import"
 
 #: includes/admin.php:119
 msgid ""
 "The data source consists of language-specific SQL files located in the "
 "plugin's data directory"
 msgstr ""
-"Źródło danych składa się z plików SQL specyficznych dla danego języka, "
-"znajdujących się w katalogu danych wtyczki."
+"The data source consists of language-specific SQL files located in the "
+"plugin's data directory"
 
 #: includes/admin.php:146
 msgid "Re-import database"
-msgstr "Ponownie zaimportuj bazę danych"
+msgstr "Re-import database"
 
 #: includes/admin.php:164
 msgid "Shortcode"
@@ -79,7 +83,7 @@ msgstr "Shortcode"
 
 #: includes/admin.php:173
 msgid "To display today s meditation, use:"
-msgstr "Aby wyświetlić dzisiejszą medytację, użyj:"
+msgstr "To display today s meditation, use:"
 
 #: includes/admin.php:182
 msgid "[noniko_daily_meditation]"
@@ -87,7 +91,7 @@ msgstr "[noniko_daily_meditation]"
 
 #: includes/admin.php:191
 msgid "To display a specific day:"
-msgstr "Aby wyświetlić określony dzień:"
+msgstr "To display a specific day:"
 
 #: includes/admin.php:201
 msgid "[noniko_daily_meditation date=\"01-03\"]"
@@ -95,20 +99,26 @@ msgstr "[noniko_daily_meditation date=\"01-03\"]"
 
 #: includes/admin.php:225
 msgid "You do not have sufficient permissions."
-msgstr "Nie masz wystarczających uprawnień."
+msgstr "You do not have sufficient permissions."
 
 #: includes/admin.php:283
 msgid "The database was imported successfully."
-msgstr "Baza danych została pomyślnie zaimportowana."
+msgstr "The database was imported successfully."
+
+#. translators: Plugin version.
+#: includes/footer.php:45
+#, php-format
+msgid "Version %s"
+msgstr "Version %s"
 
 #: includes/shortcode.php:66
 msgid "meditation_table_suffix"
-msgstr "pl"
+msgstr "en"
 
 #: includes/shortcode.php:79
 msgid "No meditation was found for this day."
-msgstr "Nie znaleziono medytacji na dzisiaj."
+msgstr "No meditation was found for this day."
 
 #: includes/shortcode.php:126
-msgid "Just for Today:"
-msgstr "Właśnie dzisiaj:"
+msgid "Just for Today: "
+msgstr "Just for Today: "

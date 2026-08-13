@@ -67,7 +67,7 @@ function noniko_dmc_render_admin_page() {
 			<h2>
 				<?php
 				echo esc_html__(
-					'Database information',
+					'Information',
 					'noniko-daily-meditation-companion'
 				);
 				?>

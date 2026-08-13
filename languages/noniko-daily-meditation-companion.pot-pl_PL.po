@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/noniko-daily-"
 "meditation-companion\n"
 "POT-Creation-Date: 2026-08-12T14:56:25+02:00\n"
-"PO-Revision-Date: 2026-08-13 08:28+0200\n"
+"PO-Revision-Date: 2026-08-13 12:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -50,6 +50,10 @@ msgid "Daily Meditation"
 msgstr "Daily Meditation"
 
 #: includes/admin.php:66
+msgid "Information"
+msgstr "Informacje"
+
+#: includes/admin.php:66
 msgid "Database information"
 msgstr "Informacje o bazie danych"
 
@@ -87,7 +91,7 @@ msgstr "[noniko_daily_meditation]"
 
 #: includes/admin.php:191
 msgid "To display a specific day:"
-msgstr "Aby wyświetlić określony dzień:"
+msgstr "To display a specific day:"
 
 #: includes/admin.php:201
 msgid "[noniko_daily_meditation date=\"01-03\"]"
@@ -101,14 +105,20 @@ msgstr "Nie masz wystarczających uprawnień."
 msgid "The database was imported successfully."
 msgstr "Baza danych została pomyślnie zaimportowana."
 
+#. translators: Plugin version.
+#: includes/footer.php:45
+#, php-format
+msgid "Version %s"
+msgstr "Wersja %s"
+
 #: includes/shortcode.php:66
 msgid "meditation_table_suffix"
 msgstr "pl"
 
 #: includes/shortcode.php:79
 msgid "No meditation was found for this day."
-msgstr "Nie znaleziono medytacji na dzisiaj."
+msgstr "Na ten dzień nie znaleziono żadnej medytacji."
 
 #: includes/shortcode.php:126
-msgid "Just for Today:"
+msgid "Just for Today: "
 msgstr "Właśnie dzisiaj:"

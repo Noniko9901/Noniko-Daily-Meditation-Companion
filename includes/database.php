@@ -581,30 +581,95 @@ function noniko_dmc_get_meditation_count( $language = null ) {
  *
  * @return void
  */
+/**
+ * Checks whether the plugin database needs to be updated.
+ *
+ * @return void
+ */
 function noniko_dmc_maybe_update_database() {
 
 	$current_db_version = NONIKO_DMC_DB_VERSION;
 
 	$installed_db_version = get_option(
 		'noniko_dmc_db_version',
-		''
+		false
 	);
 
 	/*
-	 * Database is already up to date.
+	 * ==========================================
+	 * FRESH INSTALLATION
+	 * ==========================================
+	 *
+	 * No database version means that this is
+	 * a fresh installation.
+	 *
+	 * Create the current database structure
+	 * and import bundled meditation data.
 	 */
-	if ( $installed_db_version === $current_db_version ) {
+	if ( false === $installed_db_version ) {
+
+		noniko_dmc_create_database();
+
+		update_option(
+			'noniko_dmc_db_version',
+			$current_db_version
+		);
+
 		return;
 	}
 
 	/*
-	 * Recreate and import all bundled database data.
+	 * ==========================================
+	 * DATABASE IS ALREADY UP TO DATE
+	 * ==========================================
 	 */
-	noniko_dmc_create_database();
+	if (
+		version_compare(
+			$installed_db_version,
+			$current_db_version,
+			'>='
+		)
+	) {
+		return;
+	}
 
 	/*
-	 * Store the new database version
-	 * only after the import has been completed.
+	 * ==========================================
+	 * DATABASE MIGRATIONS
+	 * ==========================================
+	 */
+
+	/*
+	 * 1.0.0.3
+	 */
+	if (
+		version_compare(
+			$installed_db_version,
+			'1.0.0.3',
+			'<'
+		)
+	) {
+
+		/*
+		 * Put database changes for 1.0.0.3 here.
+		 *
+		 * Example:
+		 *
+		 * global $wpdb;
+		 *
+		 * $table_name = noniko_dmc_get_table_name( 'en' );
+		 *
+		 * $wpdb->query(
+		 *     "ALTER TABLE {$table_name}
+		 *      ADD COLUMN example VARCHAR(255) NOT NULL DEFAULT ''"
+		 * );
+		 */
+	}
+
+	/*
+	 * ==========================================
+	 * SAVE NEW DATABASE VERSION
+	 * ==========================================
 	 */
 	update_option(
 		'noniko_dmc_db_version',

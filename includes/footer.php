@@ -31,7 +31,7 @@ function noniko_dmc_display_footer() {
 
 		<p class="noniko-dmc-footer__text">
 			<span class="noniko-dmc-footer__name">
-				<?php echo esc_html( $plugin_data['Name'] ); ?>
+				<?php echo esc_html( $plugin_data['Name'] ); ?> | 🇵🇱
 			</span>
 
 			<span class="noniko-dmc-footer__separator" aria-hidden="true">
@@ -69,7 +69,7 @@ function noniko_dmc_display_footer() {
 			</span>
 
 			<span>
-				<?php echo esc_html( $plugin_data['Author'] ); ?>
+				<?php echo esc_html( $plugin_data['Author'] ); ?> 
 			</span>
 		</p>
 

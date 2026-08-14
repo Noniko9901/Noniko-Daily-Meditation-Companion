@@ -4,7 +4,7 @@ Tags: meditation, daily meditation, recovery, addiction recovery, shortcode
 Requires at least: 6.9
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0.2
+Stable tag: 1.0.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,7 @@ The plugin currently supports:
 * Polish.
 * English.
 
+
 The database and plugin architecture are designed to support additional languages in future releases.
 
 == Database ==
@@ -74,6 +75,10 @@ The meditation database is stored locally in the WordPress installation.
 The plugin does not require an external API or remote service to display meditation content.
 
 == Changelog ==
+
+= 1.0.0.3 =
+* The system responsible for updating the database has been fixed.
+
 
 = 1.0.0.2 =
 

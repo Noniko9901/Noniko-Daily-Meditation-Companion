@@ -24,7 +24,13 @@ Display a specific date:
 ```text
 [noniko_daily_meditation date="01-03"]
 ```
-## 📦 Requirements
--WordPress 6.9+
--PHP 7.4+
 
+## 📦 Requirements
+- WordPress 6.9+
+- PHP 7.4+
+
+## 📄 License
+GPL-2.0-or-later
+
+## 👤 Author
+Noniko9901

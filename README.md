@@ -6,7 +6,7 @@ A simple WordPress plugin for displaying a **daily meditation** directly on your
 
 - 🧘 Daily meditation
 - 📅 Meditation by date
-- 🇵🇱 Polish & 🇬🇧 English
+- Polish &  English
 - 🗄️ Local database
 - 🧩 Simple shortcode
 - 🔒 No external API required

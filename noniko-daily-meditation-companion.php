@@ -3,7 +3,7 @@
  * Plugin Name: Noniko Daily Meditation Companion
  * Plugin URI: https://github.com/noniko9901/noniko-daily-meditation-companion
  * Description: Displays a daily meditation from a local WordPress database.
- * Version: 1.0.0.3
+ * Version: 1.0.0.4
  * Requires at least: 6.9
  * Requires PHP: 7.4
  * Author: Noniko9901
@@ -18,13 +18,18 @@
 
 defined( 'ABSPATH' ) || exit;
 
+define(
+	'NONIKO_DMC_PATH',
+	plugin_dir_path( __FILE__ )
+);
+
 /**
  * Plugin version.
  *
  * @var string
  */
-define( 'NONIKO_DMC_VERSION', '1.0.0.3' );
-define( 'NONIKO_DMC_DB_VERSION', '1.0.0.3' );
+define( 'NONIKO_DMC_VERSION', '1.0.0.4' );
+define( 'NONIKO_DMC_DB_VERSION', '1.0.0.4' );
 
 /**
  * Plugin main file.
@@ -48,21 +53,20 @@ define( 'NONIKO_DMC_DIR', plugin_dir_path( __FILE__ ) );
 define( 'NONIKO_DMC_URL', plugin_dir_url( __FILE__ ) );
 
 
+require_once NONIKO_DMC_PATH . 'includes/database.php';
+require_once NONIKO_DMC_PATH . 'includes/shortcode.php';
+require_once NONIKO_DMC_PATH . 'includes/footer.php';
 
-require_once NONIKO_DMC_DIR . 'includes/database.php';
-
-require_once NONIKO_DMC_DIR . 'includes/shortcode.php';
-
-require_once NONIKO_DMC_DIR . 'includes/footer.php';
 
 
 /**
  * Load admin functionality.
  */
 if ( is_admin() ) {
-	require_once NONIKO_DMC_DIR . 'includes/admin.php';
+	require_once NONIKO_DMC_PATH . 'admin/admin-menu.php';
+	require_once NONIKO_DMC_PATH . 'admin/information.php';
+	require_once NONIKO_DMC_PATH . 'admin/tools.php';
 }
-
 /**
  * Activate plugin.
  *

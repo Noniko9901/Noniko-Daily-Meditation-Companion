@@ -76,9 +76,14 @@ The plugin does not require an external API or remote service to display meditat
 
 == Changelog ==
 
+
+= 1.0.0.4 =
+
+* Added administration subpages.
+* Added information about available translations.
+
 = 1.0.0.3 =
 * The system responsible for updating the database has been fixed.
-
 
 = 1.0.0.2 =
 

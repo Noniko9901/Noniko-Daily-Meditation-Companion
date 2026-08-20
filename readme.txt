@@ -2,9 +2,9 @@
 Contributors: noniko9901
 Tags: meditation, daily meditation, recovery, addiction recovery, shortcode
 Requires at least: 6.9
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0.3
+Stable tag: 1.0.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,6 +76,11 @@ The plugin does not require an external API or remote service to display meditat
 
 == Changelog ==
 
+
+= 1.0.0.5 =
+
+* Fixed plugin compatibility with the WordPress version.
+*  Added "System of the Year" to the footer.
 
 = 1.0.0.4 =
 

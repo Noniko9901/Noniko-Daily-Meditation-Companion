@@ -3,7 +3,7 @@
  * Plugin Name: Noniko Daily Meditation Companion
  * Plugin URI: https://github.com/noniko9901/noniko-daily-meditation-companion
  * Description: Displays a daily meditation from a local WordPress database.
- * Version: 1.0.0.4
+ * Version: 1.0.0.5
  * Requires at least: 6.9
  * Requires PHP: 7.4
  * Author: Noniko9901
@@ -28,8 +28,8 @@ define(
  *
  * @var string
  */
-define( 'NONIKO_DMC_VERSION', '1.0.0.4' );
-define( 'NONIKO_DMC_DB_VERSION', '1.0.0.4' );
+define( 'NONIKO_DMC_VERSION', '1.0.0.5' );
+define( 'NONIKO_DMC_DB_VERSION', '1.0.0.5' );
 
 /**
  * Plugin main file.

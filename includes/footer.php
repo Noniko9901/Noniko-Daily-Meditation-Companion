@@ -53,8 +53,17 @@ function noniko_dmc_display_footer() {
 			</span>
 
 			<span>
-				&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?>
-			</span>
+	<?php
+	$start_year   = 2026;
+	$current_year = (int) gmdate( 'Y' );
+
+	echo '&copy; ' . esc_html( $start_year );
+
+	if ( $current_year > $start_year ) {
+		echo '&ndash;' . esc_html( $current_year );
+	}
+	?>
+</span>
 
 			<span class="noniko-dmc-footer__separator" aria-hidden="true">
 				&middot;

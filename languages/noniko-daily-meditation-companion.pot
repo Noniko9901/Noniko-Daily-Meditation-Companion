@@ -2,21 +2,22 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Noniko Daily Meditation Companion 1.0.0.1\n"
+"Project-Id-Version: Noniko Daily Meditation Companion 1.0.0.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/noniko-daily-meditation-companion\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-12T14:56:25+02:00\n"
+"POT-Creation-Date: 2026-08-20T23:06:09+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: noniko-daily-meditation-companion\n"
 
 #. Plugin Name of the plugin
 #: noniko-daily-meditation-companion.php
-#: includes/admin.php:55
+#: admin/information.php:28
+#: includes/admin.php:58
 msgid "Noniko Daily Meditation Companion"
 msgstr ""
 
@@ -40,64 +41,153 @@ msgstr ""
 msgid "https://github.com/noniko9901"
 msgstr ""
 
-#: includes/admin.php:18
-msgid "Noniko Daily Meditation"
+#: admin/admin-menu.php:24
+msgid "Noniko Meditation"
 msgstr ""
 
-#: includes/admin.php:22
-msgid "Daily Meditation"
+#: admin/admin-menu.php:28
+msgid "Noniko Meditation "
 msgstr ""
 
-#: includes/admin.php:66
+#: admin/admin-menu.php:41
+#: admin/admin-menu.php:45
+#: admin/information.php:245
+#: includes/admin.php:69
 msgid "Information"
 msgstr ""
 
-#: includes/admin.php:66
-msgid "Database information"
+#: admin/admin-menu.php:56
+#: admin/admin-menu.php:60
+#: admin/tools.php:26
+msgid "Tools"
 msgstr ""
 
-#: includes/admin.php:82
-msgid "Plugin version"
+#: admin/information.php:41
+msgid "Shortcodes"
 msgstr ""
 
-#: includes/admin.php:110
+#: admin/information.php:52
+msgid "To display today's meditation, use:"
+msgstr ""
+
+#: admin/information.php:66
+msgid "To display a meditation for a specific day, use:"
+msgstr ""
+
+#: admin/information.php:87
+msgid "Languages and translations"
+msgstr ""
+
+#: admin/information.php:97
+msgid "The plugin contains 366 meditation records. The meditation content is stored in the plugin database and translated independently from the WordPress translation system."
+msgstr ""
+
+#: admin/information.php:113
+msgid "Translation source"
+msgstr ""
+
+#: admin/information.php:123
+msgid "Plugin database"
+msgstr ""
+
+#: admin/information.php:137
+msgid "Number of records"
+msgstr ""
+
+#: admin/information.php:158
+msgid "What is translated?"
+msgstr ""
+
+#: admin/information.php:168
+msgid "Meditation content stored in the plugin database."
+msgstr ""
+
+#: admin/information.php:185
+msgid "WordPress plugin translations"
+msgstr ""
+
+#: admin/information.php:194
+msgid "The plugin interface is translated using the official WordPress translation system."
+msgstr ""
+
+#: admin/information.php:203
+msgid "This includes menus, buttons, notices, descriptions, settings and other user interface text."
+msgstr ""
+
+#: admin/information.php:212
+msgid "These translations are managed through WordPress.org and GlotPress and are separate from the meditation data translations."
+msgstr ""
+
+#: admin/information.php:227
+msgid "View available translations"
+msgstr ""
+
+#: admin/information.php:261
+msgid "Plugin version:"
+msgstr ""
+
+#: admin/information.php:284
+msgid "Database version:"
+msgstr ""
+
+#: admin/tools.php:37
+#: includes/admin.php:113
 msgid "Data import"
 msgstr ""
 
-#: includes/admin.php:119
-msgid "The data source consists of language-specific SQL files located in the plugin's data directory"
+#: admin/tools.php:46
+msgid "The data source consists of language-specific SQL files located in the plugin's data directory."
 msgstr ""
 
-#: includes/admin.php:146
+#: admin/tools.php:73
+#: includes/admin.php:149
 msgid "Re-import database"
 msgstr ""
 
-#: includes/admin.php:164
-msgid "Shortcode"
-msgstr ""
-
-#: includes/admin.php:173
-msgid "To display today s meditation, use:"
-msgstr ""
-
-#: includes/admin.php:182
-msgid "[noniko_daily_meditation]"
-msgstr ""
-
-#: includes/admin.php:191
-msgid "To display a specific day:"
-msgstr ""
-
-#: includes/admin.php:201
-msgid "[noniko_daily_meditation date=\"01-03\"]"
-msgstr ""
-
-#: includes/admin.php:225
+#: admin/tools.php:101
+#: includes/admin.php:228
 msgid "You do not have sufficient permissions."
 msgstr ""
 
-#: includes/admin.php:283
+#: admin/tools.php:159
+#: includes/admin.php:286
 msgid "The database was imported successfully."
+msgstr ""
+
+#: includes/admin.php:17
+msgid "Noniko Daily Meditation"
+msgstr ""
+
+#: includes/admin.php:21
+msgid "Daily Meditation"
+msgstr ""
+
+#: includes/admin.php:85
+msgid "Plugin version"
+msgstr ""
+
+#: includes/admin.php:122
+msgid "The data source consists of language-specific SQL files located in the plugin's data directory"
+msgstr ""
+
+#: includes/admin.php:167
+msgid "Shortcode"
+msgstr ""
+
+#: includes/admin.php:176
+msgid "To display today s meditation, use:"
+msgstr ""
+
+#: includes/admin.php:185
+msgid "[noniko_daily_meditation]"
+msgstr ""
+
+#: includes/admin.php:194
+msgid "To display a specific day:"
+msgstr ""
+
+#: includes/admin.php:204
+msgid "[noniko_daily_meditation date=\"01-03\"]"
 msgstr ""
 
 #. translators: Plugin version.
@@ -106,14 +196,10 @@ msgstr ""
 msgid "Version %s"
 msgstr ""
 
-#: includes/shortcode.php:66
-msgid "meditation_table_suffix"
-msgstr ""
-
-#: includes/shortcode.php:79
+#: includes/shortcode.php:91
 msgid "No meditation was found for this day."
 msgstr ""
 
-#: includes/shortcode.php:126
+#: includes/shortcode.php:148
 msgid "Just for Today: "
 msgstr ""
